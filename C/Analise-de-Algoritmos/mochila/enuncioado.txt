@@ -1,0 +1,16 @@
+Problema da mochila
+
+Nao se trata apenas de um problema classico de otimização combinatoria,mas
+apresenta diversas aplicações praticas. Mesmo para instâncias de tamanho peque
+no revela-se um desafio em algoritmos e pesquisa operacional. Especificamente
+em otimização combinatoria é um dos problemas mais intensamente estudados e é
+declarado da seguinte forma:
+
+São dados N itens para serem colocados em uma mochila de capacidade C. Cada 
+item J tem um valor Pj e peso Wj associado.
+
+Deseja-se encher a mochila obtendo o maior valor possivel sem exceder a capa
+cidade C. Formalmente a mochila é 0/1 é assim definida:
+
+maximize  
+
