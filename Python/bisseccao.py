@@ -5,7 +5,9 @@ import sys
 def calculaPolinomio(f, x):
 
     resultado = 0
-    # Pulando de 2 em 2 para definir o multiplicador e o expoente // nao pega o ultimo termo independente
+
+    # Pulando de 2 em 2 para definir o multiplicador e o expoente //
+    # nao pega o ultimo termo independente
     for i in range(0, len(f)-1, 2):
         # f[i] = valor multiplicado por X e f[i+1]=expoente
         resultado += float(math.pow(x, f[i+1]) * f[i])
@@ -15,7 +17,8 @@ def calculaPolinomio(f, x):
 
 
 def sinal(a, b):
-    # Os dois nao podem ser iguais visto que precisamos achar uma raiz proximo a 0
+    # Os dois nao podem ser iguais visto que
+    # precisamos achar uma raiz proximo a 0
     if (a > 0 and b > 0) or (a < 0 and b < 0):
         return False
     else:
@@ -35,7 +38,7 @@ b_calculado = calculaPolinomio(funcao, b)
 
 possivel = sinal(a_calculado, b_calculado)
 # verifica se é possivel calcular a bisseção
-if possivel == False:
+if possivel is False:
     print("É impossível calcular está bisseção")
     sys.exit()
 
